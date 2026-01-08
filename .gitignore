@@ -1,0 +1,5 @@
+*.txt
+*.code-workspace
+.vscode/
+.src/
+src/

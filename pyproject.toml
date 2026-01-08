@@ -1,0 +1,23 @@
+[project]
+name = "exchange-analyzer"
+version = "0.0.1.0"
+description = "This project was developed to perform technical analyses of foreign exchange markets, stock market activity, and cryptocurrencies."
+authors = [
+    {name = "AntunesJr",email = "silvioantunes1@hotmail.com"}
+]
+packages = [{include = "exchange_analyzer", from = "src"}]
+license = {text = "GPL-3.0-only"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mplfinance (>=0.12.9,<0.13.0)",
+    "plotly (>=5.10.0,<5.11.0)",
+    "websocket-client (>=1.4.0,<1.5.0)",
+    "pandas-ta (>=0.4.71b0,<0.5.0)",
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
